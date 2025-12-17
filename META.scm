@@ -47,7 +47,7 @@
      (dependency-scanning . "Dependabot + OSSF Scorecard")
      (credentials . "Environment variables only, never committed")
      (input-validation . "Whitelist + schema validation at boundaries")
-     (license-compliance . "AGPL-3.0-or-later"))
+     (license-compliance . "MIT OR AGPL-3.0-or-later"))
 
     (testing
      (framework . "language-native")
@@ -84,11 +84,11 @@
       compliance, and multi-platform CI/CD. This creates a unified
       approach to quality across all repositories.")
 
-    (why-agpl
-     "AGPL-3.0-or-later chosen to ensure derivative works remain open
-      source while allowing integration with MIT/BSD libraries. The
-      copyleft provision protects community contributions and ensures
-      improvements flow back to the ecosystem.")
+    (why-dual-license
+     "MIT OR AGPL-3.0-or-later dual-license chosen to maximize flexibility.
+      MIT allows permissive use for most cases. AGPL-3.0-or-later ensures
+      derivative works for network services remain open source. Users may
+      choose whichever license fits their needs.")
 
     (why-polyglot
      "Language selection based on domain fit: Rust for performance-critical
