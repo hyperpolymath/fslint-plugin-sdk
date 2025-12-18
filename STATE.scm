@@ -15,7 +15,7 @@
   '((version . "0.1.0")
     (schema-version . "1.0")
     (created . "2025-12-15")
-    (updated . "2025-12-15")
+    (updated . "2025-12-17")
     (project . "fslint-plugin-sdk")
     (repo . "github.com/hyperpolymath/fslint-plugin-sdk")))
 
@@ -27,7 +27,7 @@
   '((name . "fslint-plugin-sdk")
     (tagline . "image:https://img.shields.io/badge/Rust-1.70+-orange.svg[Rust 1.70+]")
     (version . "0.1.0")
-    (license . "AGPL-3.0-or-later")
+    (license . "MIT OR AGPL-3.0-or-later")
     (rsr-compliance . "gold-target")
 
     (tech-stack
@@ -41,7 +41,7 @@
 
 (define current-position
   '((phase . "v0.1 - Initial Setup and RSR Compliance")
-    (overall-completion . 25)
+    (overall-completion . 30)
 
     (components
      ((rsr-compliance
@@ -80,29 +80,55 @@
 
     (milestones
      ((v0.2
-       ((name . "Core Functionality")
+       ((name . "Core Functionality Complete")
         (status . "pending")
         (items
-         ("Implement primary features"
-          "Add comprehensive tests"
-          "Improve documentation"))))
+         ("Complete path module with all helper functions"
+          "Complete metadata module with SystemTime helpers"
+          "Complete patterns module with regex patterns for common file types"
+          "Complete context module for PluginContext access"
+          "Add unit tests for all modules (coverage > 50%)"
+          "Publish to crates.io as alpha"))))
+
+      (v0.3
+       ((name . "Extended Pattern Library")
+        (status . "pending")
+        (items
+         ("Add patterns for programming language files"
+          "Add patterns for config files (JSON, YAML, TOML)"
+          "Add patterns for log files"
+          "Add patterns for IDE/editor artifacts"
+          "Create pattern composition helpers"))))
 
       (v0.5
        ((name . "Feature Complete")
         (status . "pending")
         (items
-         ("All planned features implemented"
+         ("Add async file operations support"
+          "Add file hash utilities (SHA256)"
+          "Add MIME type detection helpers"
           "Test coverage > 70%"
-          "API stability"))))
+          "API stability review"
+          "Publish beta to crates.io"))))
+
+      (v0.8
+       ((name . "Documentation & Examples")
+        (status . "pending")
+        (items
+         ("Complete API documentation with examples"
+          "Create example plugins repository"
+          "Add plugin development guide"
+          "Integration tests with file-soup"))))
 
       (v1.0
        ((name . "Production Release")
         (status . "pending")
         (items
-         ("Comprehensive test coverage"
-          "Performance optimization"
-          "Security audit"
-          "User documentation complete"))))))))
+         ("Comprehensive test coverage (>80%)"
+          "Performance benchmarks"
+          "Security audit complete"
+          "Publish stable 1.0 to crates.io"
+          "Announce on Rust community channels"))))))))
 
 ;;;============================================================================
 ;;; BLOCKERS & ISSUES
@@ -151,6 +177,17 @@
 
 (define session-history
   '((snapshots
+     ((date . "2025-12-17")
+      (session . "security-review-and-roadmap")
+      (accomplishments
+       ("Fixed unpinned GitHub Actions (dtolnay/rust-toolchain, codecov-action, editorconfig-checker)"
+        "Standardized license to MIT OR AGPL-3.0-or-later across all files"
+        "Updated Cargo.toml license and readme path"
+        "Updated README.adoc license badge and section"
+        "Updated META.scm license-compliance field"
+        "Expanded roadmap with detailed v0.2-v1.0 milestones"))
+      (notes . "Security audit: all GitHub Actions now SHA-pinned, license consistency verified"))
+
      ((date . "2025-12-15")
       (session . "initial-state-creation")
       (accomplishments
@@ -185,10 +222,10 @@
 (define state-summary
   '((project . "fslint-plugin-sdk")
     (version . "0.1.0")
-    (overall-completion . 25)
-    (next-milestone . "v0.2 - Core Functionality")
+    (overall-completion . 30)
+    (next-milestone . "v0.2 - Core Functionality Complete")
     (critical-blockers . 0)
     (high-priority-issues . 0)
-    (updated . "2025-12-15")))
+    (updated . "2025-12-17")))
 
 ;;; End of STATE.scm

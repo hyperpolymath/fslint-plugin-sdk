@@ -4,7 +4,7 @@
 :sectnums:
 
 image:https://img.shields.io/badge/Rust-1.70+-orange.svg[Rust 1.70+]
-image:https://img.shields.io/badge/License-MIT-green.svg[MIT License]
+image:https://img.shields.io/badge/License-MIT%20OR%20AGPL--3.0--or--later-blue.svg[MIT OR AGPL-3.0-or-later]
 image:https://img.shields.io/badge/RSR-Tier%201-gold.svg[RSR Tier 1]
 
 **SDK with helper utilities for FSLint plugin development.**
@@ -125,9 +125,9 @@ impl Plugin for LargeFilePlugin {
 
 == License
 
-MIT OR Apache-2.0
+MIT OR AGPL-3.0-or-later
 
-See link:LICENSE-MIT[LICENSE-MIT] for details.
+See link:LICENSE.txt[LICENSE.txt] for details.
 
 == Contributing
 
